@@ -15,25 +15,19 @@ Welcome to this repository designed to help you set up a Docker Swarm environmen
 
 ### Build Docker image
 
-1. **Clone this repository:**
-   \`\`\`bash
-   git clone https://github.com/your-username/your-repo.git
-   cd your-repo
-   \`\`\`
-
-2. **Build the Docker image:**
+1. **Build the Docker image:**
    \`\`\`bash
    docker build -t swarm-setup .
    \`\`\`
 
 ### Create Docker Swarm
 
-3. **Run the Docker container to create a Docker Swarm:**
+2. **Run the Docker container to create a Docker Swarm:**
    \`\`\`bash
    docker run -d --privileged --name swarm-container swarm-setup
    \`\`\`
 
-4. **Verify that the Docker Swarm is running:**
+3. **Verify that the Docker Swarm is running:**
    \`\`\`bash
    docker -H tcp://0.0.0.0:2375 info
    \`\`\`
